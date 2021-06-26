@@ -1,4 +1,5 @@
 import { GetServerSideProps, NextPage } from 'next'
+import styled from 'styled-components'
 
 interface Props {
   launch: {

@@ -25,11 +25,11 @@ module.exports = {
         'plugin:jsx-a11y/recommended', // Accessibility rules
         'plugin:prettier/recommended', // Prettier recommended rules
       ],
+      plugins: ['simple-import-sort'],
       rules: {
         'react/prop-types': 'off', // We will use TypeScript's types for component props instead
         'react/react-in-jsx-scope': 'off', // No need to import React with Next.js
         'jsx-a11y/anchor-is-valid': 'off', // This rule is not compatible with how Next.js's <Link />
-        '@typescript-eslint/no-unused-vars': ['error'],
         '@typescript-eslint/explicit-function-return-type': [
           // I suggest this setting for requiring return types on functions only where useful
           'warn',
@@ -39,6 +39,8 @@ module.exports = {
           },
         ],
         'prettier/prettier': ['error', {}, { usePrettierrc: true }], // Includes .prettierrc.js rules
+        "simple-import-sort/imports": "error",
+        "simple-import-sort/exports": "error"
       },
     },
   ],
