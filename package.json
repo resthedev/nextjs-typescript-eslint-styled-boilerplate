@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "type-check": "tsc --project tsconfig.json --pretty --noEmit",
-    "lint": "eslint --ext js,jsx,ts,tsx --fix",
-     "postinstall": "husky install"
+    "lint": "eslint --ext ts --ext tsx",
+    "postinstall": "husky install"
   },
   "dependencies": {
     "next": "11.0.1",
@@ -26,6 +26,7 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
     "husky": "^6.0.0",
     "lint-staged": "^11.0.0",
     "prettier": "^2.3.1",
